@@ -158,7 +158,7 @@ public class IdCardServlet extends HttpServlet {
 	        if ("delete".equals(action)) {
 	            String id = req.getParameter("id");
 	            dao.deleteIdDetails(id);
-	            res.sendRedirect("adminDashboard.jsp");
+	            res.sendRedirect("viewDetails.jsp");
 	        }
 
 	    }

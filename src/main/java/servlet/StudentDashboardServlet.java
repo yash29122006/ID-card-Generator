@@ -1,3 +1,4 @@
+
 package servlet;
 
 import java.io.IOException;
@@ -15,7 +16,6 @@ public class StudentDashboardServlet extends HttpServlet {
 
         HttpSession session = request.getSession(false);
 
-        // Not logged in
         if (session == null || session.getAttribute("studentId") == null) {
             response.sendRedirect("login.jsp");
             return;

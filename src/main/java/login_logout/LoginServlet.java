@@ -1,3 +1,4 @@
+
 package login_logout;
 
 import java.io.IOException;
@@ -29,7 +30,6 @@ public class LoginServlet extends HttpServlet {
     		    rd.forward(request, response);
     		    return;
     		}
-
 	
 	        try {
 	            Connection con = DBConnect.getConnection();
